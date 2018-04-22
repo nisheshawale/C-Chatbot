@@ -1,0 +1,79 @@
+KWHAT IS YOUR NAME
+RMy name is CHATBOT.
+RYou can call me CHATBOT.
+RI am an A.I. CHATBOT.
+#
+KSO THAT IS YOUR NAME
+CMy name is CHATBOT.
+CYou can call me CHATBOT.
+CI am an A.I. CHATBOT.
+RYes, that's my name.
+RYes it is.
+#
+KINTERNET
+Riexplore
+#
+KMUSIC
+KAUDIO
+KMEDIA
+Rwmplayer
+#
+KEDIT TEXT
+KTEXT EDITOR
+KHTML
+Rkomodo
+#
+K_HELLO
+K_HI
+K_HI_
+K_HELLO_
+RHello there.
+RHow are you?
+#
+KHOW ARE YOU
+KHOW DO YOU DO
+RI am fine.
+RI am doing great.
+RI am good and you?
+#
+KI HATE
+RWhy do you hate*?
+RWhy do you hate it?
+RThere must be a good reason for you to hate it.
+#
+KSTARTING**
+RHi. What are you doing today?
+RHi. How are you today?
+RHello user. What is your name?
+#
+KREPETITION T1**
+RYou are repeatiting yourself.
+RCould you please stop repeating?
+RI am getting bored of your repeated conversation.
+#
+KREPETITION T2**
+RI think you just said the same thing.
+RDidn't you just said that?
+RYou have already said that.
+#
+KBOT DONT UNDERSTAND**
+RI do not know what to say now.
+RKeep saying.I am listening.
+RI have no idea what you are talking about.
+#
+KNULL INPUT**
+RTake sometime time to say something.
+RPlease say something.
+RHow do I answer if you do not say anything?
+#
+KNULL INPUT REPETITION**
+RThis is very annoying.
+RWhat's wrong with you.
+RThis is not funny.
+#
+KBYE
+KGOODBYE
+RBye, User.
+RIt was nice talking to you.
+RBye, Chat with you later.
+#

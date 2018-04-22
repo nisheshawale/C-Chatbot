@@ -1,0 +1,320 @@
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include <string>
+
+#define windowX 1200
+#define windowY 600
+#define titleX 450
+#define titleY 7
+#define menuX 1020
+#define menuY 150
+#define ONOFFX 1020
+#define ONOFFY 270
+#define messboxX 220.0
+#define messboxY 100.0
+#define repboxX 220
+#define repboxY 350
+#define boxLeng 700
+#define boxWidth 200
+#define speakerX 1020
+#define speakerY 390
+#define bubbleX 40
+#define bubbleY 150
+#define botX 40
+#define botY 400
+#define taskbarX 1200
+#define taskbarY 5
+
+using namespace std;
+using namespace sf;
+
+//for class prototype
+class messageHandler;
+class audioControl;
+class homeScreen;
+
+
+//for bakcground images and text related classes
+class homeScreen
+{
+    RenderWindow &window;
+public:
+    homeScreen(RenderWindow &w):window(w){}
+    void createTaskbar(int , int );
+    void createText( int chSize,  int setx, int sety ,Color color , string strname ,string fontstyle="LHANDW.ttf");
+
+};
+void homeScreen::createTaskbar( int length,int breadth)
+{
+    RectangleShape bar(Vector2f(length, breadth));
+    bar.setFillColor(Color(197,114,31));
+    bar.setPosition(Vector2f(0,70));
+    window.draw(bar);
+}
+void homeScreen::createText( int chSize,  int setx, int sety ,Color color , string strname ,string fontstyle)
+{
+    Font font;
+    if(!font.loadFromFile(fontstyle))
+    {
+        cout<<"font could not be loaded";
+    }
+    Text title;
+    title.setFont(font);
+    title.setPosition(Vector2f(setx, sety));
+    title.setCharacterSize(chSize);
+    title.setColor(Color(23,67,122));
+    title.setString(strname);
+    title.setColor(color);
+    window.draw(title);
+}
+
+
+class audioControl
+{
+    RenderWindow &window;
+public:
+    audioControl(RenderWindow &w): window(w){}
+    void createSprite(int setx ,int sety, string imageName);
+    void toggleSprite();
+    //related to audio true false, then toggle image void
+};
+void audioControl::createSprite(int setx ,int sety, string imageName)
+{
+    Sprite loudSprite;
+    Texture loudIcon;
+    if(!loudIcon.loadFromFile(imageName))
+    {
+        cout<<"image could not be loaded";
+    }
+    loudSprite.setTexture(loudIcon);
+    loudSprite.setPosition(setx,sety);
+    window.draw(loudSprite);
+}
+
+
+//chatbox, messaging, text display related
+class messageHandler
+{
+    RenderWindow &window;
+    string textInput;
+    string textToSend;
+    string textToRecieve;
+    bool flag=false;
+
+public:
+    messageHandler(RenderWindow &w):window(w){}
+    bool isAreaClicked(int left,int top,int width,int height , RenderWindow &window);
+    string fromAI(string s);
+    string toAI(string s);
+    void setMessagingBox(int setx, int sey, int mLength, int mBreadth);
+    void setReplyingBox(int setx, int sey, int rLength, int rBreadth);
+
+    void textDisplay(int x,int y, string str, Color color, int s=10)
+    {
+        Font font;
+        font.loadFromFile("LHANDW.ttf");
+        Text text;
+        text.setFont(font);
+        text.setColor(color);
+        text.setCharacterSize(s);
+        text.setPosition(x,y);
+        text.setString(str);
+        window.draw(text);
+    }
+    void enterText()
+    {
+        static int commentLine=0;    //number of line in messagebox
+        static int replyLine=0;      //number of line in reply box
+        static string comment[5];   //array of words of messagebox
+        static string reply[5];     //array of words of replybox
+        while(window.isOpen() )
+        {
+            Event event;
+            while (window.pollEvent(event))
+            {
+                if(event.type==Event::Closed)
+                    window.close();
+                if (Mouse::isButtonPressed(Mouse::Left))
+                {
+                    if(isAreaClicked(messboxX,messboxY,boxLeng,boxWidth,window))
+                    {
+                        //if necessary , codes to highlight
+                        flag=true;
+                    }
+//                    else if(isAreaClicked(speakerX, speakerY, 128, 128, window))
+//                    {
+//                        k^=1;
+//                        running=false;
+//                    }
+//                    else
+//                    {
+//                        running=false;
+//                        //cout<<"false being pressed"<<endl;
+//                    }
+                }
+                if(flag)
+                {
+                      if (event.type == Event::TextEntered)
+                    {
+                        if (event.text.unicode >= 32 && event.text.unicode < 125 && textInput.size()<50)
+                       {
+                            textInput.push_back((char)event.text.unicode);
+                            textDisplay(messboxX+5,messboxY+5,textInput, Color::White,20);
+
+                       }
+                       if(event.text.unicode == 8 && textInput.size()>0)  //backspace
+                       {
+                            textInput.pop_back();
+                            setMessagingBox(messboxX,messboxY, boxLeng,boxWidth);
+                       }
+                       if(event.text.unicode == 13 && textInput.size()>0)  //when enter pressed
+                       {
+                            textToSend=textInput;
+                            toAI(textToSend);                   //to AI
+                            textToRecieve=fromAI(textToSend);   //from Nishes(from AI)
+                            if(commentLine<5)
+                            {
+                                setMessagingBox(messboxX,messboxY, boxLeng,boxWidth);
+                                comment[commentLine]=textInput;
+                                for(int i=0, x=1; i<=commentLine; i++)
+                                {
+                                    textDisplay(messboxX+5,messboxY+5+x*20, comment[i] ,Color::White, 20);
+                                    x++;
+                                }
+                                textInput="";
+                                commentLine++;
+                            }
+                            else
+                            {
+                                commentLine=0;
+                                comment[commentLine]=textInput;
+                                setMessagingBox(messboxX,messboxY, boxLeng,boxWidth);      //clear all texts by black messagebox
+                                textDisplay(messboxX+5,messboxY+5+(commentLine+1)*20, textInput ,Color::White, 20);  //since 1st line should be cleared
+                                textInput="";
+                            }
+
+                            if(replyLine<5)
+                            {
+                                setReplyingBox(repboxX,repboxY, boxLeng, boxWidth);
+                                reply[replyLine]=textToRecieve;
+                                for(int i=0, x=1; i<=replyLine; i++)
+                                {
+                                    textDisplay(repboxX+5,repboxY+5+x*20, reply[i] ,Color::Black, 20);
+                                    x++;
+                                }
+                                textToRecieve="";
+                                replyLine++;
+                            }
+                            else
+                            {
+                                replyLine=0;
+                                reply[replyLine]=textToRecieve;
+                                setReplyingBox(repboxX,repboxY, boxLeng, boxWidth);
+                                textDisplay(repboxX+5,repboxY+5+(replyLine+1)*20, textToRecieve ,Color::Black, 20);  //since 1st line should be cleared
+                                textToRecieve="";
+                            }
+                       }
+                        cout<<textInput<<endl;
+                    }
+                }
+            }
+          window.display();  //outside any other but inside isopen
+        }
+
+    }
+};
+void messageHandler::setMessagingBox(int setx, int sey, int mLength, int mBreadth)
+{
+    RectangleShape messagebox(Vector2f(mLength, mBreadth));
+    messagebox.setPosition(Vector2f(setx,sey));
+    messagebox.setFillColor(Color(110,110,110));
+    messagebox.setOutlineColor(Color(220,220,220));
+    messagebox.setOutlineThickness(10);
+    window.draw(messagebox);
+}
+void messageHandler::setReplyingBox(int setx, int sey, int rLength, int rBreadth)
+{
+    RectangleShape relplybox(Vector2f(rLength, rBreadth));
+    relplybox.setPosition(Vector2f(setx,sey));
+    relplybox.setFillColor(Color(220,220,220));
+    relplybox.setOutlineColor(Color(110,110,110));
+    relplybox.setOutlineThickness(10);
+    window.draw(relplybox);
+}
+
+string messageHandler::toAI(string str)
+{
+    return  str;
+}
+
+string messageHandler::fromAI(string AIinput)
+{
+    return AIinput;
+}
+
+bool messageHandler::isAreaClicked(int left,int top,int width,int height , RenderWindow &window)
+{
+    Vector2i mousePosition = Mouse::getPosition(window);
+    if(mousePosition.x > left && mousePosition.x < (left + width)
+        && mousePosition.y > top && mousePosition.y < (top + height))
+        return true;
+    else
+        return false;
+}
+
+
+int main()
+{
+    //static bool isOutsideClicked=true;
+    RenderWindow window(VideoMode(windowX, windowY), "Chat Window");
+
+    homeScreen backPage(window);
+    audioControl speech(window);
+    messageHandler chat(window);
+
+    while (window.isOpen())
+    {
+
+    //window.setVerticalSyncEnabled(true);
+    window.clear(Color(244,244,244));
+
+    //backPage.createTaskbar(taskbarX, taskbarY);
+    //title
+    backPage.createText( 50,titleX,titleY, Color::Blue, "CHAT BOT");
+    //Menu
+    backPage.createText( 36,menuX,menuY ,Color(0,255,255), "Menu");
+    //ON/OFF
+    backPage.createText( 24,ONOFFX,ONOFFY,Color(255,23,111), "ON/OFF");
+    //volume
+    //backPage.createText( 24,740,420,Color(20,255,20),"Volume");
+
+    //image
+    //speech.createSprite(speakerX, speakerY, "sound.png");
+
+    //chat area
+    chat.setMessagingBox( messboxX, messboxY, boxLeng, boxWidth);
+    chat.setReplyingBox( repboxX, repboxY, boxLeng, boxWidth);
+
+    //logo
+    speech.createSprite(bubbleX,bubbleY,"bubble.png");
+    speech.createSprite(botX,botY,"bot.png");
+    Event event;
+    //cout<<"first while";
+        while (window.pollEvent(event) )
+        {
+                //cout<<"\thuh????????????"<<endl;
+            if (event.type == Event::Closed)
+                window.close();
+
+                chat.enterText();
+                //isOutsideClicked=false;
+
+        }
+        //cout<<"not initially but after clicking outside aint?"<<endl;
+        window.display();
+        //isOutsideClicked=true;
+    }
+
+    return 0;
+}
+
