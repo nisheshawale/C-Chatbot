@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1520749134 source:c:\users\ics\desktop\c++ tutorials\chatbot\main.cpp
+	"classHeader.h"
+
+1516842306 source:c:\users\ics\desktop\c++ tutorials\chatbot\upperandclean.c
+
+1520568216 c:\users\ics\desktop\c++ tutorials\chatbot\classheader.h
+	"strings.h"
+	<iostream>
+	<ctime>
+	<conio.h>
+	<fstream>
+	<sstream>
+	<algorithm>
+	<stack>
+	<map>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<windows.h>
+
+1520526188 c:\users\ics\desktop\c++ tutorials\chatbot\strings.h
+	<string>
+	<vector>
+	<cstdlib>
+
+1516844737 c:\users\ics\desktop\c++ tutorials\chatbot\upperandclean.h
+	"strings.h"
+
+1516848698 c:\users\ics\desktop\c++ tutorials\chatbot\strings.cpp
+	"strings.h"
+
+1520526188 source:c:\users\ics\desktop\c++ tutorials\chatbot\strings.cpp
+	"strings.h"
+

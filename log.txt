@@ -1,0 +1,339 @@
+
+
+Conversation Log - Sun Mar 11 11:45:16 2018
+
+
+
+
+Conversation Log - Sun Mar 11 11:46:51 2018
+
+
+>bye
+IT WAS NICE TALKING TO YOU USER, SEE YOU NEXT TIME!
+
+
+Conversation Log - Sun Mar 11 12:04:01 2018
+
+
+>hi
+HOW ARE YOU?
+>i am fine
+SO, THIS IS ALL ABOUT YOU?
+>how are you?
+I'M DOING WELL AND YOU?
+>good
+I HAVE NO IDEA OF WHAT YOU ARE TALKING ABOUT.
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>d
+VERY GOOD CONVERSATION!
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>f
+CONTINUE, I'M LISTENING...
+>i hate dogs
+WHY DO YOU HATE DOGS?
+>i hate i'm a robot
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>f
+I HAVE NO IDEA OF WHAT YOU ARE TALKING ABOUT.
+>i hate i'm a robot
+WHY DO YOU HATE IT?
+>f
+I HAVE NO IDEA OF WHAT YOU ARE TALKING ABOUT.
+>i hate i'm a robot
+WHY DO YOU HATE YOU'RE A ROBOT?
+>bye
+OK, BYE. SEE YOU LATER!
+
+
+Conversation Log - Sun Mar 11 12:09:38 2018
+
+
+>love me
+VERY GOOD CONVERSATION!
+>sing a music
+VERY GOOD CONVERSATION!
+>listen to music
+wmplayer
+>bye
+OK, BYE. SEE YOU LATER!
+
+
+Conversation Log - Sun Mar 11 12:17:21 2018
+
+
+>good
+CONTINUE, I'M LISTENING...
+>i am good
+TELL ME MORE ABOUT YOURSELF.
+>fine
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>twl ma a joke
+VERY GOOD CONVERSATION!
+>joke
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>bye
+IT WAS NICE TALKING TO YOU USER, SEE YOU NEXT TIME!
+
+
+Conversation Log - Sun Mar 11 12:41:02 2018
+
+
+>kiran dawadi
+I HAVE NO IDEA OF WHAT YOU ARE TALKING ABOUT.
+>i am kiran dawadi
+SO, YOU ARE TALKING ABOUT YOURSELF
+
+
+Conversation Log - Sun Mar 11 12:41:30 2018
+
+
+>i want to listen to music
+SO, YOU WANT TO LISTEN TO MUSIC.
+>music
+wmplayer
+>bye
+OK, BYE. SEE YOU LATER!
+
+
+Conversation Log - Sun Mar 11 12:43:13 2018
+
+
+>i want to listen to music
+wmplayer
+>i want to sing a song
+WHY DO YOU WANT IT?
+>bye
+IT WAS NICE TALKING TO YOU USER, SEE YOU NEXT TIME!
+
+
+Conversation Log - Sun Mar 11 12:44:23 2018
+
+
+>my name is nishesh awale
+THANKS FOR TELLING ME YOUR NAME USER!
+>bye
+BYE USER! SEE YOU NEXT TIME.
+
+
+Conversation Log - Sun Mar 11 12:45:28 2018
+
+
+>i would like to listen to song
+SO, THIS IS ALL ABOUT YOU?
+>bye
+OK, BYE. SEE YOU LATER!
+
+
+Conversation Log - Sun Mar 11 12:46:28 2018
+
+
+>i would like to listen to music
+wmplayer
+>how are you
+I'M DOING FINE!
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>what is your favourite movie
+I HAVE NO IDEA.
+>bye
+BYE USER! SEE YOU NEXT TIME.
+
+
+Conversation Log - Sun Mar 11 12:48:10 2018
+
+
+>i want to surf the internet
+IS THERE ANY REASON WHY YOU WANT THIS?
+>bye
+BYE USER! SEE YOU NEXT TIME.
+
+
+Conversation Log - Sun Mar 11 12:48:42 2018
+
+
+>open the browser
+iexplore
+>sing a song
+wmplayer
+>bye
+OK, BYE. SEE YOU LATER!
+
+
+Conversation Log - Sun Mar 11 12:49:30 2018
+
+
+>sfsdfd
+VERY GOOD CONVERSATION!
+>bye
+BYE USER! SEE YOU NEXT TIME.
+
+
+Conversation Log - Sun Mar 11 12:50:55 2018
+
+
+>very good thank you very much
+YOU ARE A VERY POLITE PERSON!
+>no i am not 
+OK, SO IT'S NO, I THOUGHT THAT YOU WOULD SAY YES.
+>no i never say yes
+SO YOU DISAPPROVE IT?
+>yes absolutely you are a bad bod
+IS THIS A COMPLIMENT?
+>no  you are absolute trash
+IS THIS A COMPLIMENT?
+>no
+WHY ARE YOU SAYING NO?
+>how are you
+WHY DO YOU WANT TO KNOW HOW AM I DOING?
+>i love you
+I APPRECIATE YOU TOO USER!
+>bye
+OK, BYE. SEE YOU LATER!
+
+
+Conversation Log - Sun Mar 11 12:52:52 2018
+
+
+>bimAL
+CONTINUE, I'M LISTENING...
+>MY NAME IS BIAMAL
+THANKS FOR TELLING ME YOUR NAME USER!
+>WHAT IS  YOUR NAME?
+MY NAME IS CHATBOT.
+>HOW ARE YOU?
+I'M DOING WELL AND YOU?
+>ME TOO.
+VERY GOOD CONVERSATION!
+>I LIKE TO LISTEN TO MUSIC
+wmplayer
+>i hate you're a robot
+I SEE NO REASON FOR THAT.
+>f
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>i hate you're a robot
+WHY DO YOU HATE ME?
+>f
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>i hate you're a robot
+HATERED IS NOT A GOOD THING.
+>f
+VERY GOOD CONVERSATION!
+>i hate you're a robot
+WHY DO YOU HATE ME?
+>f
+VERY GOOD CONVERSATION!
+>sing a song
+wmplayer
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>f
+VERY GOOD CONVERSATION!
+>i hate dogs
+WHY DO YOU HATE DOGS?
+>bye
+IT WAS NICE TALKING TO YOU USER, SEE YOU NEXT TIME!
+
+
+Conversation Log - Sun Mar 11 13:36:59 2018
+
+
+
+
+Conversation Log - Sun Mar 11 13:37:50 2018
+
+
+>listen to music
+wmplayer
+>how are you
+I'M DOING WELL AND YOU?
+>
+AT LEAST TAKE SOME TIME TO ENTER SOMETHING MEANINGFUL.
+>
+WHAT'S WRONG WITH YOU?
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>fdfafdfd
+I HAVE NO IDEA OF WHAT YOU ARE TALKING ABOUT.
+>rrasdfdsfdsf
+VERY GOOD CONVERSATION!
+>bye
+OK, BYE. SEE YOU LATER!
+
+
+Conversation Log - Sun Mar 11 13:41:44 2018
+
+
+>open the browser
+iexplore
+
+
+Conversation Log - Sun Mar 11 14:14:50 2018
+
+
+>how are you?
+I'M DOING FINE!
+>fgdfgdfsgfds
+CONTINUE, I'M LISTENING...
+>listen to music
+wmplayer
+>i hate you're a robot
+I SEE NO REASON FOR THAT.
+>f
+VERY GOOD CONVERSATION!
+>i hate you're a robot
+WHY DO YOU HATE ME?
+>f
+VERY GOOD CONVERSATION!
+>i hate you're a robot
+HATERED IS NOT A GOOD THING.
+>f
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>i hate you're a robot
+HATERED IS NOT A GOOD THING.
+>f
+CONTINUE, I'M LISTENING...
+>i hate you're a robot
+HATERED IS NOT A GOOD THING.
+>f
+I HAVE NO IDEA OF WHAT YOU ARE TALKING ABOUT.
+>i hate you're a robot
+HATERED IS NOT A GOOD THING.
+>i hate dogs
+WHY DO YOU HATE IT?
+>f
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>i hate dogs
+HATERED IS NOT A GOOD THING BUT IT COULD BE JUSTIFIED WHEN IT IS SOMETHING BAD.
+>g
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>i hate dogs
+WHY DO YOU HATE IT?
+>bye
+BYE USER! SEE YOU NEXT TIME.
+
+
+Conversation Log - Sun Mar 11 14:17:34 2018
+
+
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>f
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>f
+I'M NOT SURE IF I UNDERSTAND WHAT YOU ARE TALKING ABOUT.
+>i hate dogs
+WHY DO YOU HATE IT?
+>f
+CONTINUE, I'M LISTENING...
+>i hate dogs
+THERE MUST A GOOD REASON FOR YOU TO HATE IT.
+>f
+CONTINUE, I'M LISTENING...
+>i hate dogs
+WHY DO YOU HATE DOGS?
+>bye
+IT WAS NICE TALKING TO YOU USER, SEE YOU NEXT TIME!
